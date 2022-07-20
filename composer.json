@@ -1,0 +1,34 @@
+{
+    "name": "picsmize/picsmize-laravel",
+    "description": "Official Picsmize Facade for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Picsmize",
+            "email": "picsmize@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "picsmize@gmail.com"
+    },
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Picsmize\\PicsmizeLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Picsmize\\PicsmizeLaravel\\PicsmizeServiceProvider"
+            ],
+            "aliases": {
+                "Picsmize": "Picsmize\\PicsmizeLaravel\\Facades\\Picsmize"
+            }
+        }
+    }
+}
